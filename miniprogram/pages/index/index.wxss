@@ -1,0 +1,46 @@
+/**index.wxss**/
+
+page {
+  padding-top: 54rpx;
+  background-color: #f6f6f6;
+  padding-bottom: 60rpx;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.player-item {
+  width: 100%;
+  background-color: #eeeeee;
+  height: 60px;
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.player-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.player-name {
+  flex: 1;
+}
+
+.player-mmr {
+  justify-self: flex-end;
+  margin-right: 10px;
+}

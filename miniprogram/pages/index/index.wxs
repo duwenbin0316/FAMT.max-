@@ -1,0 +1,11 @@
+var STATIC_CDN = 'http://cdn.dota2.com/apps/dota2/images/heroes/';
+
+module.exports = {
+  getHeroUrl: function(id, heroInfo) {
+    if (!heroInfo) {
+      return ''
+    }
+
+    return STATIC_CDN + heroInfo.replace('npc_dota_hero_', '') + '_sb.png'
+  },
+}

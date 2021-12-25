@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <wxs src="./index.wxs" module="tools" />
+  <view class="title">FAMT 战队数据分析</view>
+  <image class="logo" src="../../images/logo.jpeg"></image>
+  <view class="player-item" wx:for="{{players}}" wx:for-item="i" data-id="{{i.id}}" bindtap="goTo">
+    <image class="player-avatar" src="{{ i.detail.profile.avatarmedium }}" ></image>
+    <view class="player-name">{{ i.detail.profile.personaname }}</view>
+    <view class="player-mmr">MMR {{ i.detail.mmr_estimate.estimate }}</view>
+  </view>
+</view>
